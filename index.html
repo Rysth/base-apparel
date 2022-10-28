@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+
+<body>
+
+  <main>
+    <section id="hero-section">
+      <div class="brand-container">
+        <img src="images/logo.svg" alt="brand-logo" aria-hidden="true">
+      </div>
+      <picture>
+        <source media="(max-width: 700px)" srcset="./images/hero-mobile.jpg">
+        <img src="images/hero-desktop.jpg" alt="desktop-image-hero-section">
+      </picture>
+      <div class="information-container">
+        <h1 class="font-light color-des-red">We're
+          <span class="font-bold color-grayish-red">coming soon</span>
+        </h1>
+        <p class="color-des-red">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form action="#" method="get">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <label class="color-soft-red display-none" for="email" id="email-validator">Please provide a valid
+            email</label>
+          <label class="error-icon display-none" id="error-icon">
+            <img src="images/icon-error.svg" alt="" aria-hidden="true">
+          </label>
+          <button type="submit" id="submit">
+            <img src="images/icon-arrow.svg" alt="" aria-hidden="true">
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
